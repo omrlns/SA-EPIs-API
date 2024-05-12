@@ -2,9 +2,9 @@ import express from 'express'
 import { postAddEquipamento, getListarEquipamento, putEditarEquipamento, deleteEquipamento } from '../controlllers/equipamentos.js'
 const router = express.Router()
 
-router.post('/equipamentos', postAddEquipamento)
+router.post('/equipamento', postAddEquipamento)
 router.get('/equipamentos', getListarEquipamento)
-router.put('/equipamentos/:codigoepi', putEditarEquipamento)
-router.delete('/equipamentos/:codigoepi', deleteEquipamento)
+router.put('/equipamento/:codigoepi', putEditarEquipamento)
+router.delete('/equipamento/:codigoepi', deleteEquipamento)
 
 export default router 
